@@ -5,10 +5,11 @@ package be.jorambarrez.activiti.benchmark.activity;
 import org.activiti.engine.delegate.DelegateExecution;
 import org.activiti.engine.delegate.JavaDelegate;
 
+import java.io.Serializable;
 import java.util.Random;
 
 
-public class GenerateRandomValueActivity implements JavaDelegate {
+public class GenerateRandomValueActivity implements JavaDelegate, Serializable {
   
   private static final long serialVersionUID = 1L;
   
